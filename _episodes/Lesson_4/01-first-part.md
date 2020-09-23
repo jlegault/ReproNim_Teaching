@@ -1,5 +1,5 @@
 ---
-title: "An introduction to this lesson"
+title: "An introduction to Qoala-T"
 teaching: 45
 exercises: 1
 questions:
@@ -10,6 +10,8 @@ objectives:
 - "Use Qoala-T on a sample dataset"
 keypoints:
 - Introduction to using Qoala-T to check quality of structural magnetic resonance imaging data, which is particularly important for child and clinical  populations.
+---
+
 # Using Qoala-T to help with quality control of Freesurfer reconstructed files
 
 After Freesurfer reconstruction, we should always make sure the files were properly reconstructed, especially for child populations.  This is because children tend to move a lot and
@@ -75,4 +77,3 @@ Go to the online [Qoala-T app](https://qoala-t.shinyapps.io/qoala-t_app/) and in
 
 Then look at the graphical output, save this image, and download the .csv file.
 
-**Next Step:** [[Manual Inspection of Data]]
