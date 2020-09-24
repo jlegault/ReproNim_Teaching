@@ -1,6 +1,6 @@
 ---
 title: "Manual Inspection of MRI data"
-teaching: 30
+teaching: 20
 exercises: 0
 questions:
 - "What should I look for in sMRI scans for quality assurance?"
@@ -13,11 +13,11 @@ keypoints:
 
 # Inspecting MRI data before running Freesurfer edits
 
-You should always inspect the MRI data to decide whether you should edit your brain structure scan data and choose which edits to run.  The purpose of this page is to guide you through the process of decision making and documentation before and while you do the actual Freesurfer edits such as skullstripping, gray matter and white matter edits, and control point editing. You can also see our full step-by-step [tutorial for Freesurfer edits](https://github.com/jlegault/Materials_for_Inspection_of_sMRI_data/blob/master/Freesurfer_Edits_Full_Tutorial.pdf).
+You should always inspect the MRI data to decide whether you should edit your brain structure scan data and choose which edits to run.  The purpose of this page is to guide you through the process of decision making and documentation before and while you do the actual Freesurfer edits such as skullstripping, gray matter and white matter edits, and control point editing. 
 
 ## Which data should undergo manual inspection? 
 
-Let's look at the Qoala-T table output that can be derived by following the steps in the [[Qoala-T Quality Control]] page of this wiki.
+Let's look at the Qoala-T table output that can be derived by following the steps in the first part of Lesson 4.
 
 ![](https://github.com/jlegault/Materials_for_Inspection_of_sMRI_data/blob/master/Images_for_wiki_page/qoala-t_table_original.png)
 
@@ -44,19 +44,10 @@ See below for an example of how you should fill out the spreadsheet.
 ![](https://github.com/jlegault/Materials_for_Inspection_of_sMRI_data/blob/master/Images_for_wiki_page/QC_spreadsheet_example.png)
 
 ### Open Freeview GUI 
-Freeview is a Freesurfer-based visualization toolkit. You should use our python script to help pull up Freeview, which will then have most of brain tissue overlays needed to assess the data.
+Freeview is a Freesurfer-based visualization toolkit. You can open this by simply typing Freeview into your command line once you have Freesurfer installed.  For more details about this software, please see [here](https://surfer.nmr.mgh.harvard.edu/fswiki/FreeviewGuide/FreeviewGeneralUsage/FreeviewQuickStart). You should load the following files:
 
-1. First open the python script
-
-```python /Users/qigroup/Documents/projects/blast/scripts/edit_freesurfer_surface.py```
-
-2. Designate the directory to where you have the Freesurfer reconstructed data
-3. Select the subject, check that the surface was found, and hit OK.
-
-![](https://github.com/jlegault/Materials_for_Inspection_of_sMRI_data/blob/master/Images_for_wiki_page/python_script_find_subject.png)
-
-4. Click on the Editing Brain Actions tab
-5. Click on the View subject button
+1. First load the following Volumes: wm, brainmask, and T1.  Make sure the brainmask is selected for viewing.
+2. Then load your Surfaces: rh.pial, rh.white, lh.pial, and lh.white.  Make sure one of the pial surfaces is selected for viewing.
 
 ### Check for movement
 If it looks like there are “rings” around the brain, there is likely a significant amount of movement.  Check to see if this is seen across 3 consecutive slices of the brain or more.  Below is a picture of a participant with significant movement.  Therefore, we would write a 1 in the "excessive movement" column of the Qoala-T QC template spreadsheet.
