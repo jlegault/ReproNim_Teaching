@@ -1,1 +1,0 @@
-# Introduction to Reproducibility Workshop
