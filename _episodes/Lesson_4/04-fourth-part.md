@@ -1,4 +1,3 @@
-
 ---
 title: "Freesurfer Edits: Editing Gray Matter"
 teaching: 20
@@ -9,9 +8,10 @@ objectives:
 - "Learn how to adjust the watershed parameters"
 - "Learn how to skullstrip"
 keypoints:
-- Introduction to the first step of Freesurfer editing
+- Introduction to the first step of Freesurfer editing.
 ---
 
+# Freesurfer Edits Part 1: Editing Gray Matter
 *Adjusting watershed parameters for ideal brainmask volume*
 
 It's super simple and fast!
@@ -30,6 +30,4 @@ recon-all -skullstrip  -clean-bm -gcut -subjid [subject id]
 ```
 This command usually takes less than 2 minutes to run. Then you can reopen the brain volumes in FreeView by clicking “View gcuts effect” and repeat the process until the brainmask is as good as possible. A good technique is to start by steadily lowering the watershed parameter by ~2 until it starts cutting into the brain, and then bump it back up so it includes the entire brain.
 
-**Next step:** [[Control Point Edits]]
 
-[[FreeSurfer Overview]]
