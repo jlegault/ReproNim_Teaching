@@ -11,6 +11,9 @@ objectives:
 keypoints:
 - Introduction to using Qoala-T to check quality of structural magnetic resonance imaging data, which is particularly important for child and clinical  populations.
 ---
+# Before using this tutorial
+
+Make sure you've watched the tutorial video that overviews Freesurfer outputs and follow along with tutorial demonstration in video.
 
 # Using Qoala-T to help with quality control of Freesurfer reconstructed files
 
