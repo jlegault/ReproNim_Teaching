@@ -2,7 +2,7 @@
 Being able to be confident in your data and being able to deciden when to and how to make freesurfer edits is not something that can be learned in an hour or two.  There is no single tutorial video that could cover all of this without being extremely long.  Therefore, I am providing you all with the very best resources that I have personally used that have helped me with making Freesurfer edits to my own data.  
 
 # Freeview Tutorial
-Before you made any actual edits to FS data, you should understand how to navigate Freeview, which is one of Freesurfer's main visualization and editing tools.  Please watch the very informative video below.  To follow along, you can also access the Freeview instructions [here.](https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/OutputData_freeview) 
+Before you made any actual edits to FS data, you should understand how to navigate Freeview.  If you have not watched this video (also listed in the manual inspection tutorial), please do so now since it overviews how to use Freeview, one of Freesurfer's main visualization and editing tools.  To follow along, you can also access the Freeview instructions [here.](https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/OutputData_freeview) 
 
 [![](http://img.youtube.com/vi/Mv-ECowxq2o/0.jpg)](http://www.youtube.com/watch?v=Mv-ECowxq2o "")
 
