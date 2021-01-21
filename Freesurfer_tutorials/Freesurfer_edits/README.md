@@ -7,7 +7,7 @@ Before you made any actual edits to FS data, you should understand how to naviga
 [![](http://img.youtube.com/vi/Mv-ECowxq2o/0.jpg)](http://www.youtube.com/watch?v=Mv-ECowxq2o "")
 
 # Knowing when and how to make edits
-In order to decide when to make edits, along with how to make these edits, you should follow the directions in the Freesurfer Course video below.  I highly recommend you all watch this video since it goes over the thought process and decision making process in an expert manner, and this is usually the toughest part of editing your data.  To follow along with some of the troubleshooting elements of this tutorial, please visit [here.] (https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/TroubleshootingData)
+In order to decide when to make edits, along with how to make these edits, you should follow the directions in the Freesurfer Course video below.  I highly recommend you all watch this video since it goes over the thought process and decision making process in an expert manner, and this is usually the toughest part of editing your data.  To follow along with some of the troubleshooting elements of this tutorial, please visit [here.](https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/TroubleshootingData)
 
 [![](http://img.youtube.com/vi/AR83_Bt04VQ/0.jpg)](http://www.youtube.com/watch?v=AR83_Bt04VQ "")
 
@@ -21,19 +21,19 @@ In order to decide when to make edits, along with how to make these edits, you s
 Andrew Jahn is an awesome neuroscientist who provides a lot of valuable and short tutorials.  To overview some of the key steps on the video provided above, I suggest you view these short summary videos.  I am also linking his corresponding brain book.
 
 ## Types of Freesurfer errors
-Here is an overview of types of hard and soft errors Freesurfer can make.  For the purposes of this tutorial, I'd recommend you focus on the soft errors, which will be overviewed next.  For the corresponding brain book page, please see [here.] https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_12_FailureModes.html
+Here is an overview of types of hard and soft errors Freesurfer can make.  For the purposes of this tutorial, I'd recommend you focus on the soft errors, which will be overviewed next.  For the corresponding brain book page, please see [here.](https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_12_FailureModes.html)
 
 [![](http://img.youtube.com/vi/8n5_XE-OH0E/0.jpg)](http://www.youtube.com/watch?v=8n5_XE-OH0E "")
 
 ## Gray Matter Edits: Skull stripping and pial surface edits
-The section overviewing skull stripping is especially useful since the Freesurfer Course video in the "Knowing when and how to make edits" portion of this document did not have time to overview this process.    For the corresponding brain book page, please see [here.] (https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_13_PialSurface.html)
+The section overviewing skull stripping is especially useful since the Freesurfer Course video in the "Knowing when and how to make edits" portion of this document did not have time to overview this process.    For the corresponding brain book page, please see [here.](https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_13_PialSurface.html)
 
 [![](http://img.youtube.com/vi/WaPtktm2EX4/0.jpg)](http://www.youtube.com/watch?v=WaPtktm2EX4 "")
 
 In order to understand proper rationale for the pial surface edits, I highly recommend you skip to the portion in the Freesurfer Course video that goes over this (around the 2:45 minute mark) if you have not watched it already. 
 
 ## White Matter Edits: Control points and white matter normalization
-This video goes over how to make control point edits and white matter normalization.  For the corresponding brain book page, please see [here.] (https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_14_ControlPoints.html)
+This video goes over how to make control point edits and white matter normalization.  For the corresponding brain book page, please see [here.](https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_14_ControlPoints.html)
 
 [![](http://img.youtube.com/vi/TY2G8cHHzRE/0.jpg)](http://www.youtube.com/watch?v=TY2G8cHHzRE "")
 
