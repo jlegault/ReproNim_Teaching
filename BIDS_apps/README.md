@@ -1,6 +1,6 @@
 # BIDS Applications
 
-In 2016, a seminal article written by [Eklund, Nichols and Knutsson](https://www.pnas.org/content/pnas/113/28/7900.full.pdf) brought to light the reproducibility crisis in functional MRI studies and pointed out some important oversights, inaccuracies, and areas of improvement for many neuroimaging softwares.  While the paper originally inflated the number of studies affected, which was later corrected, it still emphasized the importance of having a consistent and rigorous preprocessing structure. As a beginner overview of some of the problems that can be seen in fMRI research, including findings from the Eklund et al (2016) article (though not by name), see the video below.
+In 2016, a seminal article written by [Eklund, Nichols and Knutsson](https://www.pnas.org/content/pnas/113/28/7900.full.pdf) brought to light the reproducibility crisis in functional MRI studies and pointed out some important oversights, inaccuracies, and areas of improvement for many neuroimaging softwares.  While the paper originally inflated the number of studies affected, which was later corrected, it still emphasized the importance of having a consistent and rigorous preprocessing structure. As a beginner overview of some of the problems that can be seen in fMRI research, including findings from the Eklund et al. (2016) article (though not by name), see the video below.
 [![](http://img.youtube.com/vi/8thDuVfqCCM/0.jpg)](http://www.youtube.com/watch?v=8thDuVfqCCM "")
 
 As you all learned in the [heudiconv and BIDS tutorial](https://github.com/juliagoolia28/UD_repronim/blob/master/heudiconv_tutorial/README.md), Brain Imaging Data Structure (BIDS) specifies a reproducible and consistent directory structure for all your neuroimaging data.  This allows scientists from all over the world to have a uniform data structure for all their data, enabling greater reproducibility and availability of user-friendly data sharing.  For an introduction to this formatting, you should visit their [website](http://bids-apps.neuroimaging.io/). For a comprehensive overview on what BIDS formatting is and how it can be used, please see the video below.
@@ -26,13 +26,28 @@ To facilitate the process of running fMRIPrep, Andy made a handy [script](https:
 
 #### A few things to keep in mind about this tutorial
 1. MRI data are huge, therefore running this script, even on a single subject, can take a while (depending on your HPC system, possibly anywhere from 1-2 hours).  
-2. Since these data have been uploaded to open neuro and are already in BIDS format, you may notice that Andy uses the --skip-bids-validation flag
-3. You may also notice that another flag (--fs-no-reconall) has been used in order to skip a very lengthy process, Freesurfer's surface reconstruction.  If you do not use this flag, then Freesurfer will do a full reconstruction, which can make the whole process take anywhere from 6-24 hours to complete.
-4. If you are using your own data for the first time, I recommend you not include the --skip-bids-validation since you want to make sure your data are in proper BIDS format, ensuring fMRIPrep will run.  Furthermore, if you are interested in gray matter measures, you will not want to use the --fs-no-reconall flag.  Finally, if you are using longitudinal data, make sure you use the --longitudinal flag.  You can always visit the fmriprep handbook to learn more abou the [command-line arguments](https://fmriprep.org/en/stable/usage.html) and [pipeline details](https://fmriprep.org/en/stable/workflows.html).
+2. Since these data have been uploaded to open neuro and are already in BIDS format, you may notice that Andy uses the --skip-bids-validation flag.  If you are using your own data for the first time, you will need to make sure your data are in BIDS format.  There are many ways to do so.  For example, we have our [Heudiconv tutorial](https://github.com/juliagoolia28/UD_repronim/blob/master/heudiconv_tutorial/README.md), which shows you a concise way to convert your data to BIDS format. For a detailed tutorial on how to convert files without using Heudiconv, you can see [here](https://reproducibility.stanford.edu/bids-tutorial-series-part-1b/#auto4).  Through both methods, you should double-check that your data are properly formatted.  One way is to use the [BIDS validator](https://bids-standard.github.io/bids-validator/)), which checks your data to make sure they are in proper BIDS format.  Another way is to just run FMRIPrep without the --skip-bids-validation argument. 
+3. You may also notice that another flag (--fs-no-reconall) has been used in order to skip a very lengthy process, Freesurfer's surface reconstruction.  If you do not use this flag, then Freesurfer will do a full reconstruction, which can make the whole process take anywhere from 6-24 hours to complete. 
+4. If you are interested in gray matter measures, you will not want to use the --fs-no-reconall flag. 
+5. If you are using longitudinal data, make sure you use the --longitudinal flag.  You can always visit the fmriprep handbook to learn more about the [command-line arguments](https://fmriprep.org/en/stable/usage.html) and [pipeline details](https://fmriprep.org/en/stable/workflows.html).
 
 ### Quality Assurance Checks
 An important aspect of responsible science is checking your data.  FMRIPrep makes this process easy by providing quality checks for all your preprocessing steps.  This video overviews the output structure of fMRIPrep and how to view the HTML quality check file. You can view the corresponding brain book [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_3_ExaminingPreprocData.html).  For detailed instructions on how to manually inspect your structural MRI data, please see the following [tutorial](https://github.com/juliagoolia28/UD_repronim/tree/master/Freesurfer_Manual_Inspection) in our series.  
 [![](http://img.youtube.com/vi/fQHEKSzFKDc/0.jpg)](http://www.youtube.com/watch?v=fQHEKSzFKDc "")
+
+### Optional Additional Preprocessing: Smoothing and Scaling
+While some researchers are used to smoothing and scaling their data, FMRIPrep does not automatically run these steps, since they are more of an individual / judgement call.  If you would like to run these additional steps, you can watch the video below.  The corresponding brain book chapter is [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_4_AdditionalPreproc.html).   
+https://www.youtube.com/watch?v=lA9ZUefF3Po&list=PLIQIswOrUH6_szyxn9Fy-2cxd3vjlklde&index=4
+
+### 1st-Level Analysis
+This video overviews how to do a general linear model analysis on a single participant and visualize these results using AFNI viewer.  This step must be completed before you run the group analysis.  The corresponding brain book chapter can be found [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_5_1stLevelAnalysis.html).
+[![](http://img.youtube.com/vi/OESt1--zuq4/0.jpg)](http://www.youtube.com/watch?v=OESt1--zuq4 "")
+
+### Group Analysis
+This video overviews how to automate the 1st-level analysis across all your participants using a for loop (this is a long process -- can take days) and how to run a group analysis.  The corresponding brain book chapter is [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_6_GroupAnalysis.html).
+[![](http://img.youtube.com/vi/JBf7HFQZ6gw/0.jpg)](http://www.youtube.com/watch?v=JBf7HFQZ6gw "")
+
+There you go! You have successfully learned all the steps to use fMRIPrep to preprocess data and do some first- and second- level analyses!
 
 
 
