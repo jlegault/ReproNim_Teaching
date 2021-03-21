@@ -16,11 +16,11 @@ Arguably one of the most frequently used BIDS apps is FmriPrep, which is an auto
 ## How do I use FmriPrep?
 Andrew Jahn (creator of [Andy's Brain Blog](https://www.andysbrainblog.com/about) and [Andy's Brain Book](https://andysbrainbook.readthedocs.io/en/latest/index.html)) has already created an incredibly useful tutorial for using fMRIPrep, from installation all the way to analyses.  Please see below for links and descriptions of these videos.  
 
-### Downloading Tutorial Data and Installing fMRIPrep
+### 1. Downloading Tutorial Data and Installing fMRIPrep
 It's often best to learn by doing, therefore you can actually download a set of tutorial data and follow along with Andy's instructions.  This video introduces what fMRIPrep is, overviews how to obtain a [Freesurfer license](https://surfer.nmr.mgh.harvard.edu/registration.html) and install docker (overviewed in our [container tutorial](https://github.com/juliagoolia28/UD_repronim/tree/master/container_tutorial)) and fMRIPrep, and finally guides you to download a [Flanker task dataset](https://openneuro.org/datasets/ds000102/versions/00001).  You can view the corresponding tutorial from Andy's Brain Book [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_1_Download.html) and here (https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_2_RunningAnalysis.html).  If instead of using Docker you would prefer to use Singularity, please follow the instructions in either the [fMRIPrep handbook](https://fmriprep.org/en/stable/singularity.html) or [Andy's Brain Book](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html#fmriprep).
 [![](http://img.youtube.com/vi/J0npRWV2zTY/0.jpg)](http://www.youtube.com/watch?v=J0npRWV2zTY "")
 
-### Running fMRIPrep
+### 2. Running fMRIPrep
 To facilitate the process of running fMRIPrep, Andy made a handy [script](https://github.com/andrewjahn/OpenScience_Scripts/blob/master/fmriprep_singleSubj.sh) you can edit and use on your own. The video below overviews what this script contains and how to run it. You can view the corresponding tutorial from Andy's Brain Book [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_2_RunningAnalysis.html). 
 [![](http://img.youtube.com/vi/qCX4YlrdTAw/0.jpg)](http://www.youtube.com/watch?v=qCX4YlrdTAw "")
 
@@ -31,19 +31,19 @@ To facilitate the process of running fMRIPrep, Andy made a handy [script](https:
 4. If you are interested in gray matter measures, you will not want to use the --fs-no-reconall flag. 
 5. If you are using longitudinal data, make sure you use the --longitudinal flag.  You can always visit the fmriprep handbook to learn more about the [command-line arguments](https://fmriprep.org/en/stable/usage.html) and [pipeline details](https://fmriprep.org/en/stable/workflows.html).
 
-### Quality Assurance Checks
+### 3. Quality Assurance Checks
 An important aspect of responsible science is checking your data.  FMRIPrep makes this process easy by providing quality checks for all your preprocessing steps.  This video overviews the output structure of fMRIPrep and how to view the HTML quality check file. You can view the corresponding brain book [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_3_ExaminingPreprocData.html).  For detailed instructions on how to manually inspect your structural MRI data, please see the following [tutorial](https://github.com/juliagoolia28/UD_repronim/tree/master/Freesurfer_Manual_Inspection) in our series.  
 [![](http://img.youtube.com/vi/fQHEKSzFKDc/0.jpg)](http://www.youtube.com/watch?v=fQHEKSzFKDc "")
 
-### Optional Additional Preprocessing: Smoothing and Scaling
+### 4. Optional Additional Preprocessing: Smoothing and Scaling
 While some researchers are used to smoothing and scaling their data, FMRIPrep does not automatically run these steps, since they are more of an individual / judgement call.  If you would like to run these additional steps, you can watch the video below.  The corresponding brain book chapter is [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_4_AdditionalPreproc.html).   
 https://www.youtube.com/watch?v=lA9ZUefF3Po&list=PLIQIswOrUH6_szyxn9Fy-2cxd3vjlklde&index=4
 
-### 1st-Level Analysis
+### 5. 1st-Level Analysis
 This video overviews how to do a general linear model analysis on a single participant and visualize these results using AFNI viewer.  This step must be completed before you run the group analysis.  The corresponding brain book chapter can be found [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_5_1stLevelAnalysis.html).
 [![](http://img.youtube.com/vi/OESt1--zuq4/0.jpg)](http://www.youtube.com/watch?v=OESt1--zuq4 "")
 
-### Group Analysis
+### 6. Group Analysis
 This video overviews how to automate the 1st-level analysis across all your participants using a for loop (this is a long process -- can take days) and how to run a group analysis.  The corresponding brain book chapter is [here](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo_6_GroupAnalysis.html).
 [![](http://img.youtube.com/vi/JBf7HFQZ6gw/0.jpg)](http://www.youtube.com/watch?v=JBf7HFQZ6gw "")
 
